@@ -1,3 +1,9 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    font-family: 'Yusei Magic', sans-serif;
+}
+
+
 body {
     background-color: #B8DEE3;
     font-size: large;
