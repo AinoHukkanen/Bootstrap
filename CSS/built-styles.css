@@ -1,0 +1,70 @@
+body {
+  background-color: #B8DEE3;
+  font-size: large;
+  font-family: "Yusei Magic", sans-serif;
+}
+
+h1 {
+  font-family: "Yusei Magic", sans-serif;
+  padding: 20px;
+  text-align: center;
+  color: rgb(4, 160, 134);
+}
+
+.btn btn-primary btn-lg {
+  max-width: 50px;
+  max-height: 50px;
+  background-color: #bdaae6;
+}
+
+.lajitteluhattu:hover {
+  background-color: #bdaae6;
+}
+
+.container-fluid {
+  background-color: rgb(4, 160, 134);
+}
+
+.col-auto {
+  background-color: rgb(4, 160, 134);
+}
+
+.container {
+  background-color: #B8DEE3;
+}
+
+#quiz {
+  border: 4px solid black;
+  background-color: rgb(58, 214, 188);
+}
+
+.textcolor {
+  color: rgb(4, 160, 134);
+}
+
+.collapse collapse-horizontal {
+  background-color: #B8DEE3;
+}
+
+#hedwig {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+}
+
+.card card-body {
+  background-color: #B8DEE3;
+}
+
+#alaotsikko {
+  text-align: center;
+}
+
+.carousel {
+  margin: auto;
+  width: 640px;
+  height: 360px;
+}
+
+/*# sourceMappingURL=built-styles.css.map */

@@ -16,8 +16,8 @@ h1 {
     max-height: 50px;
     background-color: #bdaae6;
 }
-.lajitteluhattu:hover {
-    background-color: #bdaae6;
+#lajitteluhattu:hover {
+    background-color: rgb(4, 160, 134);
 }
 .container-fluid {
     background-color: rgb(4, 160, 134);
@@ -55,4 +55,9 @@ h1 {
     margin: auto;
     width:640px;
     height:360px;
+}
+footer {
+background-color: rgb(4, 160, 134);
+border-radius: 5px;
+margin-top: 20px;
 }
