@@ -8,6 +8,8 @@ h1 {
   font-family: "Yusei Magic", sans-serif;
   padding: 20px;
   text-align: center;
+}
+h1 h1 {
   color: rgb(4, 160, 134);
 }
 
@@ -65,6 +67,20 @@ h1 {
   margin: auto;
   width: 640px;
   height: 360px;
+}
+
+footer {
+  background-color: rgb(4, 160, 134);
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+button[name=vastaus] {
+  border: 5px solid blue;
+}
+
+input[type=radio] {
+  font-size: large;
 }
 
 /*# sourceMappingURL=built-styles.css.map */

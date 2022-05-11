@@ -1,56 +1,65 @@
 $background-color:#B8DEE3;
 $background-color2:#bdaae6;
+$background-color3: rgb(4, 160, 134);
 $font-stack: 'Yusei Magic', sans-serif;
+$font-size: large;
+$pixels: 50px;
 
+
+@mixin theme($theme: rgb(4, 160, 134)) {
+    h1 {
+        color: $theme;
+    }
+}
 body {
     background-color: $background-color;
-    font-size: large;
-    font-family: 'Yusei Magic', sans-serif;
+    font-size: $font-size;
+    font-family: $font-stack;
 }
 
 h1 {
-    font-family: 'Yusei Magic', sans-serif;
+    font-family: $font-stack;
     padding: 20px;
     text-align: center;
-    color: rgb(4, 160, 134);
+    @include theme;
 }
 
 .btn btn-primary btn-lg {
-    max-width: 50px;
-    max-height: 50px;
-    background-color: #bdaae6;
+    max-width: $pixels;
+    max-height: $pixels;
+    background-color: $background-color2;
 }
 .lajitteluhattu:hover {
-    background-color: #bdaae6;
+    background-color: $background-color2;
 }
 .container-fluid {
-    background-color: rgb(4, 160, 134);
+    background-color: $background-color3;
 }
 .col-auto {
-    background-color:rgb(4, 160, 134);
+    background-color:$background-color3;
 }
 .container {
-    background-color: #B8DEE3;
+    background-color: $background-color;
 }
 #quiz {
     border: 4px solid black;
     background-color: rgb(58, 214, 188);
 }
 .textcolor {
-    color:rgb(4, 160, 134);
+    color:$background-color3;
 }
 .collapse collapse-horizontal {
-    background-color: #B8DEE3;
+    background-color: $background-color;
 }
 #hedwig {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 50px;
+    margin-top: $pixels;
 
 }
 .card card-body {
-    background-color: #B8DEE3;
+    background-color: $background-color;
 }
 #alaotsikko {
     text-align: center;
@@ -59,4 +68,16 @@ h1 {
     margin: auto;
     width:640px;
     height:360px;
+}
+footer {
+    background-color: $background-color3;
+    border-radius: 5px;
+    margin-top: 20px;
+    }
+
+button[name=vastaus] {
+    border: 5px solid blue;
+}
+input[type=radio] {
+    font-size: large;
 }
