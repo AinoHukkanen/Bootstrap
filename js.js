@@ -2,9 +2,10 @@ let p = document.querySelector("p");
 let button = document.getElementById("lajitteluhattu");
 
 
+
 p.addEventListener("mouseenter", changeColor);
 p.addEventListener("mouseleave", changeColor);
-button.addEventListener("click", tylypahka);
+button.addEventListener("click", lajitteluhattu);
 
 function changeColor() {
 
@@ -14,9 +15,15 @@ function changeColor() {
 function lajitteluhattu() {
    document.getElementById("tupa").innerHTML = "Hienoa, löysit lajitteluhatun! Mihinköhän tupaan sinä kuuluisit?";
 }
-function tylypahka(){
-    document.getElementById("tupa1").innerHTML = "Hienoa, löysit Tylypahkan! Milloinkohan sinä saat oman kirjeesi?";
+
+let button2 = document.getElementById("vastaus");
+button2.addEventListener("click", tulokset);
+
+function tulokset() {
+    alert("testi");
+    
 }
+
 
 
 
