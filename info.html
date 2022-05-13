@@ -10,14 +10,14 @@
     <script src="https://kit.fontawesome.com/b386a1392e.js" crossorigin="anonymous"></script>
     <title>Portfolio</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="style.css"> -->
     <link rel="stylesheet" href="CSS/built-styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Radio+Canada:wght@600&family=Rubik:wght@300&family=Yusei+Magic&display=swap" rel="stylesheet">
   </head>
   <body>
-<script src="js.js" defer></script>
+<script src="js2.js" defer></script>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <div class="container-fluid">
         <a class="navbar-brand" href="index.html">Kirjasivut <i class="fa-solid fa-hat-wizard fa-beat-fade"></i></a>
@@ -52,36 +52,44 @@
             <div class="col-6">
               <div id="quiz"> 
                 <h4>1. Mones kirja oli Salaisuuksien kammio?</h4>
-                <input type="radio" id="1a" name="1a" value="ensimmäinen">Ensimmäinen
+                <input type="radio" id="1a" name="1a" value="ensimmäinen"> <label type="1a" name="1a">Ensimmäinen</label>
                 <br>
-                <input type="radio" id="1b" name="1b" value="toinen">Toinen
+                <input type="radio" id="1b" name="1b" value="toinen"> <label type= "1b" name="1b">Toinen</label>
                 <br>
-                <input type="radio" id="1c" name="1c" value="kolmas">Kolmas
+                <input type="radio" id="1c" name="1c" value="kolmas"> <label type="1c" name="1c">Kolmas</label>
                 <br>
+                <button id="vastaus1" name="vastaus1">Vastaus</button>
+                <p id="answer1"></p>
                 <br>
                 <h4>2. Mikä näistä Harrylla oli hallussaan?</h4>
-                <input type="radio" id="2a" name="2a" value="viitta">Näkymättömyysviitta
+                <input type="radio" id="2a" name="2a" value="viitta"> <label type="2a" name="2a" >Näkymättömyysviitta</label>
                 <br>
-                <input type="radio" id="2b" name="2b" value="kutka">Kutka-rotta
+                <input type="radio" id="2b" name="2b" value="kutka"> <label type="2b" name="2b">Kutka-rotta</label>
                 <br>
-                <input type="radio" id="2c" name="2c" value="tora">Tora-koira
+                <input type="radio" id="2c" name="2c" value="tora"> <label type="2c" name="2c">Tora-koira</label>
                 <br>
+                <button id="vastaus2" name="vastaus2">Vastaus</button>
+                <p id="answer2"></p>
                 <br>
-                <h4>Ketkä olivat Harryn parhaat ystävät?</h4>
-                <input type="radio" id="3a" name="3a" value="HR">Hermione ja Ron
+                <h4>3. Ketkä olivat Harryn parhaat ystävät?</h4>
+                <input type="radio" id="3a" name="3a" value="HR"> <label type="3a" name="3a">Hermione ja Ron</label>
                 <br>
-                <input type="radio" id="3b" name="3b" value="PR">Percy ja Ron
+                <input type="radio" id="3b" name="3b" value="PR"> <label type="3b" name="3b" >Percy ja Ron</label>
                 <br>
-                <input type="radio" id="3c" name="3c" value="DM">Dudley ja Malfoy
+                <input type="radio" id="3c" name="3c" value="DM"> <label type="3c" name="3c">Dudley ja Malfoy</label>
                 <br>
+                <button id="vastaus3" name="vastaus3">Vastaus</button>
+                <p id="answer3"></p>
                 <br>
                 <h4>4. Millä tiellä Dursleyt asuivat?</h4>
-                <input type="radio" id="4a" name="4a" value="likusteri">Likusteritiellä
+                <input type="radio" id="4a" name="4a" value="likusteri"> <label type="4a" name="4a">Likusteritiellä</label>
                 <br>
-                <input type="radio" id="4b" name="4b" value="viisto">Viistokujalla
+                <input type="radio" id="4b" name="4b" value="viisto"> <label type="4b" name="4b">Viistokujalla</label>
                 <br>
-                <input type="radio" id="4c" name="4c" value="isku">Iskunkiertokujalla
+                <input type="radio" id="4c" name="4c" value="isku"> <label type="4c" name="4c">Iskunkiertokujalla</label>
                 <br>
+                <button id="vastaus4" name="vastaus4">Vastaus</button>
+                <p id="answer4"></p>
                 <br>
               
               </div>
@@ -89,9 +97,10 @@
             <div class="col-6">
               <p id="alaotsikko">Täällä voit testata tietosi nopeasti muutamalla kysymyksellä liittyen Harry Pottereihin. Onnea visaan!
               </p>
-              <button id="vastaus" name="vastaus">Katso tulokset</button>
-              <div class="results">
-                <p id="vastaukset"></p>
+              <p id="mielipide3" name="mielipide3">Tykkäsitkö visasta?</p>
+              <button type="button" id="mielipide" class="btn btn-primary btn-sm">Kyllä</button>
+              <button type="button" id="mielipide1" class="btn btn-secondary btn-sm">Ei</button>
+              <p id="mielipidetulos"></p>
               </div>
             </div>
                   </div>
