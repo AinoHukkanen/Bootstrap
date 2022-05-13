@@ -1,4 +1,9 @@
-fetch('http://hp-api.herokuapp.com/api/characters')
-.then(response => response.json())
-.then(data => document.getElementById('print-here').innerHTML =
-data.name)
+const urlToFetch = "https://fedeperin-harry-potter-api-en.herokuapp.com/characters"
+
+fetch(urlToFetch)
+	.then((res) => res.json())
+	.then((data) => {
+		// It brings all data at the API and it shows it at the console
+		console.log(data)
+	})
+	.catch((e) => console.log(e));
