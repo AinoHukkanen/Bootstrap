@@ -1,10 +1,16 @@
 let p = document.querySelector("p");
 let button = document.getElementById("lajitteluhattu");
+let firstLetter = document.querySelectorAll("h1");
+
 
 p.addEventListener("mouseenter", changeColor);
 p.addEventListener("mouseleave", changeColor);
 button.addEventListener("click", lajitteluhattu);
+firstLetter.addEventListener("mouseover", firstLetter1)
 
+function firstLetter1() {
+    firstLetter.classList.toggle("firstletter");
+}
 
 function changeColor() {
 
